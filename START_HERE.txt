@@ -1,0 +1,31 @@
+DJANGO AUTOML STUDIO — START HERE
+
+FASTEST WAY TO TRY IT (Python is required)
+1. Install Python 3.11 or 3.12 from https://www.python.org/downloads/windows/
+   During installation, tick "Add Python to PATH".
+2. Extract this ZIP folder to your Desktop or Documents.
+3. Double-click run_once_setup.bat.
+4. On first run, it installs the required packages. Your browser opens at:
+   http://127.0.0.1:8765
+5. Upload a CSV/XLSX file, choose the target column and click Run analysis.
+
+TO CREATE THE SINGLE WINDOWS EXE
+1. On Windows, double-click build_windows_exe.bat.
+2. When it says BUILD COMPLETE, open the dist folder.
+3. Double-click DjangoAutoMLStudio.exe.
+4. You can copy that single EXE to another Windows PC. Python is not needed on
+   the PC that runs the finished EXE.
+
+DATASET FOR THE ASSIGNMENT
+Download train.csv from the official Kaggle Titanic competition page:
+https://www.kaggle.com/competitions/titanic/data
+It contains 891 training rows. Choose Survived as the target column.
+Kaggle may ask you to sign in and accept the competition rules.
+
+YOUR DATA STAYS LOCAL
+Uploads, saved model files and the local session database are stored under:
+%LOCALAPPDATA%\DjangoAutoMLStudio
+
+The EXE build must be made on Windows. The ZIP includes the complete source
+project and scripts needed to build it; a Windows EXE cannot be compiled by
+this Linux build environment.
